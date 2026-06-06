@@ -64,7 +64,15 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
+									<!--
 									<span class="date">April 25, 2017</span>
+									-->
+									<span class="date" id="current-date"></span>
+									<script>
+									document.getElementById("current-date").textContent =
+ 								 	new Date().toLocaleDateString("en-US", {year: "numeric", month: "long", day: "numeric"});
+									</script>
+									
 									<h2><a href="#">Belajar Lebih Mudah<br />
 									Bersama SINAU Center</a></h2>
 									<p>Kami menyediakan bimbingan belajar online maupun offline <br />
