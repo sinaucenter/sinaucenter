@@ -64,7 +64,12 @@
 						<!-- Post -->
 							<section class="post">
 								<header class="major">
-									<span class="date">April 25, 2017</span>
+									<span class="date" id="current-date"></span>
+									<script>
+									document.getElementById("current-date").textContent =
+ 								 	new Date().toLocaleDateString("en-US", {year: "numeric", month: "long", day: "numeric"});
+									</script>
+									
 									<h1>This is a<br />
 									Generic Page</h1>
 									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
