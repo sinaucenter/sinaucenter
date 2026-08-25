@@ -1,532 +1,362 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="id">
+<head>
+    <title>Contact | SINAU Center</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Hubungi SINAU Center untuk konsultasi program belajar, jadwal tutor, kelas online, onsite, dan private." />
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Bimbel: Bimbingan Belajar<br />
-						SINAU Center</h1>
-						<p> Bimbingan belajar (Online dan Onsite) yang mendukung dan inspiratif bagi anda yang ingin belajar dan tumbuh bersama kami. 
-							Sinau Center (SC) merupakan sebuah ruang pembelajaran yang berfokus pada pengembangan ilmu pengetahuan alam, literasi dan numerasi. 
-							Kami berusaha membangun pemikir yang percaya diri dan kreatif, serta bertujuan untuk memberikan pendidikan yang relevan dengan masa depan mereka. 
-							Bimbel ini diperuntukkan bagi siswa/siswi SD, SMP, SMA, dan mahasiswa. 
-							<a href="https://sinaucenter.com/">Bimbel SINAU Center</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    <style>
+        :root{
+            --navy:#082b6f; --blue:#1259d5; --red:#f52222; --yellow:#ffc928;
+            --sky:#eef5ff; --soft:#f7f9fc; --text:#24324a; --muted:#68758a;
+            --border:#dce5f2; --white:#fff;
+        }
+        body{
+            color:var(--text);
+            background:linear-gradient(135deg,#061b47 0%,#0c3888 55%,#0f5cc7 100%);
+        }
+        #wrapper > .bg{background-image:none!important}
+        #intro{
+            min-height:66vh;padding-top:5rem;
+            background:
+                radial-gradient(circle at 84% 18%,rgba(255,201,40,.18),transparent 25%),
+                radial-gradient(circle at 12% 72%,rgba(245,34,34,.14),transparent 28%);
+        }
+        #intro h1{color:#fff;margin-bottom:.9rem}
+        #intro p{max-width:800px;margin-left:auto;margin-right:auto;color:rgba(255,255,255,.88);font-size:1.05rem}
+        .hero-badges{display:flex;justify-content:center;flex-wrap:wrap;gap:.7rem;margin:1.5rem 0 2rem}
+        .hero-badges span{padding:.55rem .95rem;border:1px solid rgba(255,255,255,.28);border-radius:999px;color:#fff;background:rgba(255,255,255,.09);font-weight:700;font-size:.82rem}
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">SINAU Center</a>
-					</header>
+        #header .logo{border:0;padding:.55rem 0}
+        #header .logo img{max-width:280px;width:min(70vw,280px);height:auto;display:block}
+        #nav{background:rgba(4,30,81,.96)}
+        #nav ul.links li a,#nav ul.icons li a{color:#fff!important}
+        #nav ul.links li.active{background:#fff}
+        #nav ul.links li.active a{color:var(--navy)!important}
+        #nav ul.links li a:hover{color:var(--yellow)!important}
+        #main{background:#fff}
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="program.html">Program</a></li>
-							<li><a href="tutors.html">Tutors</a></li>
-							<li><a href="learning_hub.html">Learning Hub</a></li>
-							<li class="active"><a href="contact.html">Contact</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/profile.php?id=61552721097629" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/sinau.sc" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-							<!--
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							-->
-						</ul>
-					</nav>
+        .intro-section{padding:5rem 4rem 2.2rem;text-align:center}
+        .eyebrow{display:inline-block;color:var(--blue);font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;margin-bottom:.7rem}
+        .intro-section h1{color:var(--navy);margin-bottom:1rem}
+        .intro-section p{max-width:820px;margin:0 auto;color:var(--muted)}
 
-				<!-- Main -->
-					<div id="main">
+        .contact-grid{padding:1rem 4rem 4rem;display:grid;grid-template-columns:1.05fr .95fr;gap:1.5rem}
+        .panel{border:1px solid var(--border);border-radius:24px;background:#fff;box-shadow:0 14px 40px rgba(8,43,111,.08);overflow:hidden}
+        .panel-head{padding:1.7rem;background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff}
+        .panel-head h2{color:#fff;margin:0 0 .45rem}
+        .panel-head p{margin:0;color:rgba(255,255,255,.84)}
+        .panel-body{padding:1.7rem}
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<h1>Elements<br />
-									Reference</h1>
-								</header>
+        .contact-item{display:flex;gap:1rem;align-items:flex-start;padding:1rem 0;border-bottom:1px solid var(--border)}
+        .contact-item:last-child{border-bottom:0}
+        .contact-icon{width:46px;height:46px;flex:0 0 46px;border-radius:14px;background:var(--sky);display:flex;align-items:center;justify-content:center;font-size:1.25rem}
+        .contact-item h3{font-size:.95rem;color:var(--navy);margin:0 0 .25rem}
+        .contact-item p{margin:0;color:var(--muted)}
+        .contact-item a{color:var(--blue);border-bottom:0}
 
-								<!-- Text stuff -->
-									<h2>Text</h2>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>.
-									Finally, this is a <a href="#">link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<header>
-										<h2>Heading with a Subtitle</h2>
-										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-									</header>
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-									<header>
-										<h3>Heading with a Subtitle</h3>
-										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-									</header>
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
-									<header>
-										<h4>Heading with a Subtitle</h4>
-										<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
-									</header>
-									<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+        .quick-actions{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;margin-top:1.3rem}
+        .sinau-btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:.8rem 1rem;font-size:.78rem;font-weight:800;text-decoration:none;border:1px solid var(--navy);transition:.2s ease;line-height:1.2;height:auto;text-transform:none;letter-spacing:0;box-shadow:none}
+        .sinau-btn.primary{background:var(--navy);color:#fff!important}
+        .sinau-btn.primary:hover{background:var(--blue);border-color:var(--blue)}
+        .sinau-btn.yellow{background:var(--yellow);border-color:var(--yellow);color:var(--navy)!important}
+        .sinau-btn.secondary{background:#fff;color:var(--navy)!important}
+        .sinau-btn.secondary:hover{background:var(--sky)}
 
-									<hr />
+        .consult-form label{color:var(--navy);font-weight:800;font-size:.78rem}
+        .consult-form input,.consult-form select,.consult-form textarea{border:1px solid var(--border);border-radius:12px;background:#fff;margin-bottom:1rem}
+        .consult-form textarea{resize:vertical}
+        .form-note{font-size:.78rem;color:var(--muted);margin-top:.9rem;margin-bottom:0}
 
-								<!-- Lists -->
-									<h2>Lists</h2>
-									<div class="row">
-										<div class="col-6 col-12-small">
+        .how-section{margin:0 4rem 4.5rem;padding:2.5rem;border:1px solid var(--border);border-radius:24px;background:linear-gradient(135deg,#f7faff,#eef5ff)}
+        .section-heading{text-align:center;margin-bottom:2rem}
+        .section-heading h2{color:var(--navy);margin-bottom:.5rem}
+        .section-heading p{color:var(--muted);max-width:760px;margin:0 auto}
+        .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+        .step{background:#fff;border:1px solid var(--border);border-radius:18px;padding:1.4rem;text-align:center}
+        .step-num{width:42px;height:42px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;margin:0 auto .8rem}
+        .step h3{color:var(--navy);font-size:1rem;margin-bottom:.45rem}
+        .step p{color:var(--muted);font-size:.84rem;margin:0}
 
-											<h3>Unordered</h3>
-											<ul>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Sagittis lorem eleifend.</li>
-												<li>Felis feugiat dolore viverra.</li>
-												<li>Dolor pulvinar etiam.</li>
-											</ul>
+        .faq{margin:0 4rem 4.5rem}
+        .faq h2{text-align:center;color:var(--navy);margin-bottom:1.5rem}
+        details{border:1px solid var(--border);border-radius:14px;margin:.7rem 0;background:#fff;padding:0 1.1rem}
+        summary{cursor:pointer;color:var(--navy);font-weight:800;padding:1rem 0}
+        details p{color:var(--muted);padding:0 0 1rem;margin:0}
 
-											<h3>Alternate</h3>
-											<ul class="alt">
-												<li>Dolor pulvinar etiam etiam.</li>
-												<li>Sagittis adipiscing eleifend.</li>
-												<li>Felis enim dolore viverra.</li>
-												<li>Dolor pulvinar etiam etiam.</li>
-											</ul>
+        #footer{background:#f1f5fb}
+        #footer h3{color:var(--navy)}
+        #copyright{background:#061b47}
+        #copyright ul{color:rgba(255,255,255,.72)}
 
-										</div>
-										<div class="col-6 col-12-small">
+        @media screen and (max-width:980px){
+            .contact-grid{grid-template-columns:1fr;padding-left:2rem;padding-right:2rem}
+            .intro-section{padding-left:2rem;padding-right:2rem}
+            .how-section,.faq{margin-left:2rem;margin-right:2rem}
+        }
+        @media screen and (max-width:640px){
+            #intro{min-height:auto;padding-top:5rem;padding-bottom:4rem}
+            #intro h1{font-size:2.25rem}
+            .intro-section{padding:3.5rem 1.25rem 1.5rem}
+            .contact-grid{padding:1rem 1.25rem 3rem}
+            .how-section,.faq{margin:0 1.25rem 3rem}
+            .how-section{padding:1.5rem}
+            .steps{grid-template-columns:1fr}
+            .quick-actions{grid-template-columns:1fr}
+        }
+    </style>
+</head>
 
-											<h3>Ordered</h3>
-											<ol>
-												<li>Dolor pulvinar etiam.</li>
-												<li>Etiam vel felis at viverra.</li>
-												<li>Felis enim feugiat magna.</li>
-												<li>Etiam vel felis nullam.</li>
-												<li>Felis enim et tempus.</li>
-											</ol>
+<body class="is-preload">
+<div id="wrapper" class="fade-in">
 
-											<h3>Icons</h3>
-											<ul class="icons">
-												<li><a href="https://www.facebook.com/profile.php?id=61552721097629" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="https://www.instagram.com/sinau.sc" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-												<!--
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												-->
-											</ul>
-											<ul class="icons alt">
-												<li><a href="https://www.facebook.com/profile.php?id=61552721097629" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="https://www.instagram.com/sinau.sc" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-												<!--
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												-->
-											</ul>
+    <div id="intro">
+        <h1>Let’s Talk About<br>Your Learning Goals</h1>
+        <p>
+            Punya pertanyaan tentang program, tutor, jadwal, atau kelas yang paling sesuai?
+            Hubungi SINAU Center dan ceritakan kebutuhan belajarmu.
+        </p>
+        <div class="hero-badges">
+            <span>Online Class</span><span>Onsite Class</span><span>Private Class</span><span>Academic Consultation</span>
+        </div>
+        <ul class="actions">
+            <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Contact Us</a></li>
+        </ul>
+    </div>
 
-										</div>
-									</div>
-									<h3>Definition</h3>
-									<dl>
-										<dt>Item 1</dt>
-										<dd>
-											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										</dd>
-										<dt>Item 2</dt>
-										<dd>
-											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										</dd>
-										<dt>Item 3</dt>
-										<dd>
-											<p>Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
-										</dd>
-									</dl>
+    <header id="header">
+        <a href="index.html" class="logo"><img src="images/logo-horizontal.png" alt="SINAU Center"></a>
+    </header>
 
-									<h3>Actions</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions small">
-										<li><a href="#" class="button primary small">Small</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary">Default</a></li>
-												<li><a href="#" class="button">Default</a></li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-small">
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary small">Small</a></li>
-												<li><a href="#" class="button small">Small</a></li>
-											</ul>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary fit">Default</a></li>
-												<li><a href="#" class="button fit">Default</a></li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-small">
-											<ul class="actions stacked">
-												<li><a href="#" class="button primary small fit">Small</a></li>
-												<li><a href="#" class="button small fit">Small</a></li>
-											</ul>
-										</div>
-									</div>
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="tutors.html">Tutors</a></li>
+            <li><a href="learning_hub.html">Learning Hub</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="icons">
+            <li><a href="https://www.facebook.com/profile.php?id=61552721097629" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.instagram.com/sinau.sc" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+        </ul>
+    </nav>
 
-									<hr />
+    <div id="main">
+        <section class="intro-section">
+            <span class="eyebrow">Contact SINAU Center</span>
+            <h1>Mulai dari Konsultasi Sederhana</h1>
+            <p>
+                Sampaikan jenjang pendidikan, mata pelajaran atau program yang dibutuhkan,
+                target belajar, serta pilihan kelas. Admin SINAU Center akan membantu
+                mengarahkan ke program dan tutor yang sesuai dengan ketersediaan.
+            </p>
+        </section>
 
-								<!-- Blockquote -->
-									<h2>Blockquote</h2>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis.</blockquote>
+        <section class="contact-grid">
+            <article class="panel">
+                <div class="panel-head">
+                    <h2>Hubungi Kami</h2>
+                    <p>Pilih kanal komunikasi yang paling nyaman untuk Anda.</p>
+                </div>
+                <div class="panel-body">
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p><a href="https://wa.me/628567443932" target="_blank" rel="noopener">+62 856-7443-932</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:sinau.sc@gmail.com">sinau.sc@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📸</div>
+                        <div>
+                            <h3>Instagram</h3>
+                            <p><a href="https://www.instagram.com/sinau.sc" target="_blank" rel="noopener">@sinau.sc</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">▶️</div>
+                        <div>
+                            <h3>YouTube</h3>
+                            <p>Video pembelajaran dan konten dari SINAU Center.</p>
+                        </div>
+                    </div>
 
-									<hr />
+                    <div class="quick-actions">
+                        <a class="sinau-btn primary" href="https://wa.me/628567443932?text=Halo%20SINAU%20Center,%20saya%20ingin%20konsultasi%20program%20belajar." target="_blank" rel="noopener">Chat WhatsApp</a>
+                        <a class="sinau-btn secondary" href="program.html">Lihat Program</a>
+                    </div>
+                </div>
+            </article>
 
-								<!-- Table -->
-									<h2>Table</h2>
+            <article class="panel">
+                <div class="panel-head">
+                    <h2>Konsultasi Program</h2>
+                    <p>Isi singkat, lalu pesan akan diteruskan ke WhatsApp.</p>
+                </div>
+                <div class="panel-body">
+                    <form class="consult-form" id="consultForm">
+                        <label for="studentName">Nama</label>
+                        <input type="text" id="studentName" placeholder="Nama siswa / orang tua" required>
 
-									<h3>Default</h3>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item 1</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item 2</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item 3</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item 4</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item 5</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+                        <label for="level">Jenjang / Kebutuhan</label>
+                        <select id="level" required>
+                            <option value="">Pilih jenjang / kebutuhan</option>
+                            <option>SD</option>
+                            <option>SMP</option>
+                            <option>SMA</option>
+                            <option>SNPMB</option>
+                            <option>Olimpiade</option>
+                            <option>Future Skills / Programming & Data</option>
+                            <option>Mahasiswa / Umum</option>
+                            <option>Lainnya</option>
+                        </select>
 
-									<h3>Alternate</h3>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item 1</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item 2</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item 3</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item 4</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item 5</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+                        <label for="classType">Pilihan Kelas</label>
+                        <select id="classType">
+                            <option>Belum menentukan</option>
+                            <option>Online</option>
+                            <option>Onsite</option>
+                            <option>Private</option>
+                        </select>
 
-									<hr />
+                        <label for="need">Ceritakan kebutuhan belajar</label>
+                        <textarea id="need" rows="5" placeholder="Contoh: kelas 11, ingin pendampingan Matematika untuk persiapan ujian..." required></textarea>
 
-								<!-- Buttons -->
-									<h2>Buttons</h2>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions fit">
-										<li><a href="#" class="button primary fit">Fit</a></li>
-										<li><a href="#" class="button fit">Fit</a></li>
-									</ul>
-									<ul class="actions fit small">
-										<li><a href="#" class="button primary fit small">Fit + Small</a></li>
-										<li><a href="#" class="button fit small">Fit + Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-search">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Primary</span></li>
-										<li><span class="button disabled">Default</span></li>
-									</ul>
+                        <button type="submit" class="sinau-btn yellow">Kirim via WhatsApp</button>
+                        <p class="form-note">Form ini tidak menyimpan data di website. Setelah diklik, WhatsApp akan terbuka dengan pesan yang sudah disusun otomatis.</p>
+                    </form>
+                </div>
+            </article>
+        </section>
 
-									<hr />
+        <section class="how-section">
+            <div class="section-heading">
+                <span class="eyebrow">How It Works</span>
+                <h2>Dari Konsultasi hingga Mulai Belajar</h2>
+                <p>Proses dibuat sederhana agar siswa dapat menemukan pendampingan yang sesuai.</p>
+            </div>
+            <div class="steps">
+                <article class="step">
+                    <div class="step-num">1</div>
+                    <h3>Ceritakan Kebutuhan</h3>
+                    <p>Informasikan jenjang, mata pelajaran, target, dan preferensi kelas.</p>
+                </article>
+                <article class="step">
+                    <div class="step-num">2</div>
+                    <h3>Pilih Program & Tutor</h3>
+                    <p>Admin membantu mencocokkan kebutuhan dengan program dan ketersediaan tutor.</p>
+                </article>
+                <article class="step">
+                    <div class="step-num">3</div>
+                    <h3>Mulai Belajar</h3>
+                    <p>Konfirmasi jadwal dan format kelas, kemudian mulai sesi pembelajaran bersama SINAU.</p>
+                </article>
+            </div>
+        </section>
 
-								<!-- Form -->
-									<h2>Form</h2>
+        <section class="faq">
+            <span class="eyebrow">Quick Answers</span>
+            <h2>Pertanyaan yang Sering Ditanyakan</h2>
 
-									<form method="post" action="#">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall">
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
-											</div>
-											<!-- Break -->
-											<div class="col-12">
-												<select name="demo-category" id="demo-category">
-													<option value="">- Category -</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<!-- Break -->
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-normal" name="demo-priority">
-												<label for="demo-priority-normal">Normal</label>
-											</div>
-											<div class="col-4 col-12-small">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<!-- Break -->
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">I am a human</label>
-											</div>
-											<!-- Break -->
-											<div class="col-12">
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-											<!-- Break -->
-											<div class="col-12">
-												<ul class="actions">
-													<li><input type="submit" value="Send Message" class="primary" /></li>
-													<li><input type="reset" value="Reset" /></li>
-												</ul>
-											</div>
-										</div>
-									</form>
+            <details>
+                <summary>Apakah tersedia kelas online dan onsite?</summary>
+                <p>Ya. SINAU Center menyediakan pilihan pembelajaran online dan onsite. Ketersediaan kelas disesuaikan dengan program dan jadwal tutor.</p>
+            </details>
 
-									<hr />
+            <details>
+                <summary>Apakah bisa meminta kelas private?</summary>
+                <p>Bisa. Sampaikan kebutuhan melalui WhatsApp agar admin dapat membantu mengecek tutor, mata pelajaran, dan jadwal yang tersedia.</p>
+            </details>
 
-								<!-- Image -->
-									<h2>Image</h2>
+            <details>
+                <summary>Bagaimana menentukan program yang cocok?</summary>
+                <p>Tidak perlu menentukan semuanya sendiri. Ceritakan jenjang dan target belajar melalui form konsultasi atau WhatsApp, kemudian admin akan membantu mengarahkan pilihan program.</p>
+            </details>
 
-									<h3>Fit</h3>
-									<span class="image fit"><img src="images/pic01.jpg" alt="" /></span>
-									<div class="box alt">
-										<div class="row gtr-50 gtr-uniform">
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<!-- Break -->
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<!-- Break -->
-											<div class="col-4"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
-											<div class="col-4"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
-										</div>
-									</div>
+            <details>
+                <summary>Apakah saya bisa menanyakan tutor tertentu?</summary>
+                <p>Bisa. Sebutkan nama tutor yang diminati. Penjadwalan tetap mengikuti program yang diampu dan ketersediaan tutor.</p>
+            </details>
+        </section>
+    </div>
 
-									<h3>Left &amp; Right</h3>
-									<p><span class="image left"><img src="images/pic08.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
-									<p><span class="image right"><img src="images/pic09.jpg" alt="" /></span>Lorem ipsum dolor sit accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis.</p>
+    <footer id="footer">
+        <section>
+            <h3>SINAU Center</h3>
+            <p><strong>Belajar • Bertumbuh • Berprestasi</strong><br>Solusi Inovatif untuk Navigasi Akademis Unggul.</p>
+            <p>Hubungi kami untuk konsultasi program, jadwal, dan ketersediaan tutor.</p>
+        </section>
 
-									<hr />
+        <section class="split contact">
+            <section>
+                <h3>Phone / WhatsApp</h3>
+                <p><a href="https://wa.me/628567443932">+62 856-7443-932</a></p>
+            </section>
+            <section>
+                <h3>Email</h3>
+                <p><a href="mailto:sinau.sc@gmail.com">sinau.sc@gmail.com</a></p>
+            </section>
+            <section>
+                <h3>Social</h3>
+                <ul class="icons alt">
+                    <li><a href="https://www.facebook.com/profile.php?id=61552721097629" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/sinau.sc" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+                </ul>
+            </section>
+        </section>
+    </footer>
 
-								<!-- Box -->
-									<h2>Box</h2>
-									<div class="box">
-										<p>Felis sagittis eget tempus primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Magna sed etiam ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus lorem ipsum dolor sit amet nullam. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Vestibulum ante ipsum primis in faucibus magna blandit adipiscing eu felis iaculis volutpat lorem ipsum dolor.</p>
-									</div>
+    <div id="copyright">
+        <ul><li>&copy; 2026 SINAU Center</li><li>Belajar • Bertumbuh • Berprestasi</li></ul>
+    </div>
+</div>
 
-									<hr />
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
-								<!-- Preformatted Code -->
-									<h2>Preformatted</h2>
-									<pre><code>i = 0;
+<script>
+document.getElementById('consultForm').addEventListener('submit', function(e){
+    e.preventDefault();
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+    const name = document.getElementById('studentName').value.trim();
+    const level = document.getElementById('level').value;
+    const classType = document.getElementById('classType').value;
+    const need = document.getElementById('need').value.trim();
 
-print 'It took ' + i + ' iterations to sort the deck.';
-</code></pre>
+    const message =
+`Halo SINAU Center,
 
-							</section>
+Saya ingin konsultasi program belajar.
 
-					</div>
+Nama: ${name}
+Jenjang/Kebutuhan: ${level}
+Pilihan kelas: ${classType}
+Kebutuhan belajar: ${need}
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.facebook.com/profile.php?id=61552721097629" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.instagram.com/sinau.sc" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-									<!--
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									-->
-								</ul>
-							</section>
-						</section>
-					</footer>
+Mohon informasi program dan jadwal yang sesuai. Terima kasih.`;
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+    window.open('https://wa.me/628567443932?text=' + encodeURIComponent(message), '_blank');
+});
+</script>
+</body>
 </html>
