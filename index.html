@@ -1,256 +1,881 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Sinau Center</title>
-		<!-- Logo / icon di tab browser -->
-		<link rel="icon" type="image/png" href="images/Logo_web.png">
-		
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="SINAU Center — bimbingan belajar SD, SMP, SMA, persiapan SNPMB, Olimpiade, serta pengembangan kemampuan akademik secara online dan onsite." />
+  <title>SINAU Center | Belajar • Bertumbuh • Berprestasi</title>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  <!-- Favicon: gunakan mascot lingkaran -->
+  <link rel="icon" type="image/png" href="images/favicon.png" />
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Bimbel: Bimbingan Belajar<br />
-						SINAU Center</h1>
-						<p> Bimbingan belajar (Online dan Onsite) yang mendukung dan inspiratif bagi anda yang ingin belajar dan tumbuh bersama kami. 
-							Sinau Center (SC) merupakan sebuah ruang pembelajaran yang berfokus pada pengembangan ilmu pengetahuan alam, literasi dan numerasi. 
-							Kami berusaha membangun pemikir yang percaya diri dan kreatif, serta bertujuan untuk memberikan pendidikan yang relevan dengan masa depan mereka. 
-							Bimbel ini diperuntukkan bagi siswa/siswi SD, SMP, SMA, dan mahasiswa. 
-							<a href="https://sinaucenter.com/">Bimbel SINAU Center</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+  <style>
+    :root {
+      --navy: #082d72;
+      --blue: #0f58d8;
+      --blue-soft: #eaf2ff;
+      --red: #ff2a2a;
+      --yellow: #ffc400;
+      --ink: #172033;
+      --muted: #64748b;
+      --line: #dfe7f3;
+      --white: #ffffff;
+      --surface: #f7faff;
+      --shadow: 0 18px 45px rgba(8, 45, 114, .12);
+      --radius: 24px;
+    }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">SINAU Center</a>
-					</header>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.65;
+    }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="program.html">Program</a></li>
-							<li><a href="tutors.html">Tutors</a></li>
-							<li><a href="learning_hub.html">Learning Hub</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/profile.php?id=61552721097629" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/sinau.sc" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-							<!--
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							-->
-						</ul>
-					</nav>
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button, input, textarea, select { font: inherit; }
 
-				<!-- Main -->
-					<div id="main">
+    .container {
+      width: min(1160px, calc(100% - 40px));
+      margin-inline: auto;
+    }
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<!--
-									<span class="date">April 25, 2017</span>
-									-->
-									<span class="date" id="current-date"></span>
-									<script>
-									document.getElementById("current-date").textContent =
- 								 	new Date().toLocaleDateString("en-US", {year: "numeric", month: "long", day: "numeric"});
-									</script>
-									
-									<h2><a href="#">Belajar Lebih Mudah<br />
-									Bersama SINAU Center</a></h2>
-									<p>Kami menyediakan bimbingan belajar online maupun offline <br />
-									untuk mata pelajaran seperti matematika, fisika, biologi, dan persiapan olimpiade.<br />
-									Kami juga menyediakan program persiapan SNPB bagi siswa/siswi tingkat akhir SD, SMP, dan SMA.</p>
-								</header>
-								<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://wa.me/628567443932" class="button large">Daftar Sekarang</a></li>
-								</ul>
-							</article>
+    /* =========================
+       NAVBAR
+       ========================= */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(8,45,114,.08);
+    }
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">Sed magna<br />
-										ipsum faucibus</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 22, 2017</span>
-										<h2><a href="#">Primis eget<br />
-										imperdiet lorem</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 18, 2017</span>
-										<h2><a href="#">Ante mattis<br />
-										interdum dolor</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 14, 2017</span>
-										<h2><a href="#">Tempus sed<br />
-										nulla imperdiet</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 11, 2017</span>
-										<h2><a href="#">Odio magna<br />
-										sed consectetur</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<span class="date">April 7, 2017</span>
-										<h2><a href="#">Augue lorem<br />
-										primis vestibulum</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">Full Story</a></li>
-									</ul>
-								</article>
-							</section>
+    .nav-wrap {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
 
-						<!-- Footer -->
-							<footer>
-								<div class="pagination">
-									<!--<a href="#" class="previous">Prev</a>-->
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>
+    .brand img {
+      width: 220px;
+      height: auto;
+    }
 
-					</div>
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-weight: 700;
+      font-size: .95rem;
+    }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>Cibubur, Jabodetabek.<br />
-								Bandung, Jawa Barat.<br />
-								Sleman, DIY, Jawa Tengah.<br />
-								Kediri & Gresik, Jawa Timur.<br />
-								Kuta, Bali. </p>p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(+62) 8567443932 </a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:sinau.sc@gmail.com">sinau.sc@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.facebook.com/profile.php?id=61552721097629" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.instagram.com/sinau.sc" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-									<!--
-									<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-									-->
-								</ul>
-							</section>
-						</section>
-					</footer>
+    .nav-links a {
+      position: relative;
+      padding: 8px 0;
+    }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 3px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--red), var(--blue));
+      transition: width .22s ease;
+    }
 
-			</div>
+    .nav-links a:hover::after,
+    .nav-links a[aria-current="page"]::after { width: 100%; }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 20px;
+      border-radius: 999px;
+      background: var(--navy);
+      color: var(--white);
+      font-weight: 800;
+      box-shadow: 0 10px 24px rgba(8,45,114,.18);
+      transition: transform .2s ease, background .2s ease;
+    }
 
-	</body>
+    .nav-cta:hover { transform: translateY(-2px); background: var(--blue); }
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      border-radius: 12px;
+      background: var(--navy);
+      color: white;
+      font-size: 1.25rem;
+      cursor: pointer;
+    }
+
+    /* =========================
+       HERO
+       ========================= */
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 72px 0 64px;
+      background:
+        radial-gradient(circle at 85% 18%, rgba(255,196,0,.18), transparent 23%),
+        radial-gradient(circle at 13% 20%, rgba(15,88,216,.10), transparent 28%),
+        linear-gradient(180deg, #ffffff 0%, #f7faff 100%);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      width: 480px;
+      height: 480px;
+      border: 80px solid rgba(255,42,42,.035);
+      border-radius: 50%;
+      right: -160px;
+      top: -120px;
+    }
+
+    .hero-grid {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 58px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 14px;
+      border: 1px solid #d9e6ff;
+      border-radius: 999px;
+      background: var(--white);
+      color: var(--navy);
+      font-size: .84rem;
+      font-weight: 800;
+      letter-spacing: .02em;
+      box-shadow: 0 8px 20px rgba(8,45,114,.06);
+    }
+
+    .eyebrow-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--yellow);
+      box-shadow: 0 0 0 4px rgba(255,196,0,.18);
+    }
+
+    .hero h1 {
+      margin: 22px 0 18px;
+      max-width: 760px;
+      font-size: clamp(2.7rem, 5.4vw, 5.3rem);
+      line-height: .98;
+      letter-spacing: -.045em;
+      color: var(--navy);
+    }
+
+    .hero h1 .accent { color: var(--red); }
+
+    .hero-lead {
+      max-width: 670px;
+      margin: 0 0 28px;
+      color: #4b5870;
+      font-size: 1.08rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 0 24px;
+      border-radius: 14px;
+      font-weight: 850;
+      border: 2px solid transparent;
+      transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background: var(--red);
+      color: var(--white);
+      box-shadow: 0 13px 26px rgba(255,42,42,.22);
+    }
+    .btn-primary:hover { background: #e71f1f; }
+    .btn-secondary {
+      background: var(--white);
+      color: var(--navy);
+      border-color: #cddcf7;
+    }
+    .btn-secondary:hover { border-color: var(--blue); }
+
+    .hero-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .chip {
+      padding: 8px 12px;
+      border-radius: 10px;
+      background: rgba(8,45,114,.06);
+      color: var(--navy);
+      font-size: .86rem;
+      font-weight: 750;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 510px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-card {
+      width: min(520px, 100%);
+      padding: 28px;
+      border-radius: 36px;
+      background: linear-gradient(145deg, #edf4ff, #ffffff);
+      border: 1px solid rgba(15,88,216,.12);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card img {
+      width: 100%;
+      object-fit: contain;
+      border-radius: 24px;
+    }
+
+    .floating-note {
+      position: absolute;
+      right: -8px;
+      bottom: 38px;
+      width: 210px;
+      padding: 15px 18px;
+      border-radius: 18px;
+      background: var(--navy);
+      color: var(--white);
+      box-shadow: 0 18px 38px rgba(8,45,114,.22);
+    }
+
+    .floating-note strong { color: var(--yellow); }
+    .floating-note small { display: block; opacity: .85; line-height: 1.45; margin-top: 4px; }
+
+    /* =========================
+       SECTION UTILITIES
+       ========================= */
+    section { padding: 82px 0; }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 42px;
+    }
+
+    .section-kicker {
+      margin: 0 0 8px;
+      color: var(--red);
+      font-weight: 900;
+      font-size: .85rem;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+
+    .section-head h2 {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: clamp(2rem, 4vw, 3.25rem);
+      line-height: 1.1;
+      letter-spacing: -.03em;
+    }
+
+    .section-head p { margin: 0; color: var(--muted); }
+
+    /* =========================
+       WHY SINAU
+       ========================= */
+    .why { background: var(--white); }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .feature-card {
+      min-height: 220px;
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: 0 8px 26px rgba(8,45,114,.06);
+      transition: transform .22s ease, box-shadow .22s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      display: grid;
+      place-items: center;
+      border-radius: 15px;
+      margin-bottom: 18px;
+      background: var(--blue-soft);
+      color: var(--navy);
+      font-size: 1.35rem;
+    }
+
+    .feature-card h3 { margin: 0 0 8px; color: var(--navy); font-size: 1.1rem; }
+    .feature-card p { margin: 0; color: var(--muted); font-size: .93rem; }
+
+    /* =========================
+       PROGRAMS
+       ========================= */
+    .programs { background: var(--surface); }
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .program-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 290px;
+      padding: 26px;
+      border-radius: var(--radius);
+      background: var(--white);
+      border: 1px solid #e1eafa;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 10px 28px rgba(8,45,114,.055);
+    }
+
+    .program-card::before {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      right: -42px;
+      top: -42px;
+      background: rgba(15,88,216,.07);
+    }
+
+    .program-label {
+      display: inline-block;
+      width: fit-content;
+      margin-bottom: 24px;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--blue-soft);
+      color: var(--navy);
+      font-size: .78rem;
+      font-weight: 900;
+    }
+
+    .program-card:nth-child(2) .program-label,
+    .program-card:nth-child(5) .program-label { background: #fff1f1; color: #c71f1f; }
+    .program-card:nth-child(3) .program-label,
+    .program-card:nth-child(6) .program-label { background: #fff8d9; color: #8a6500; }
+
+    .program-card h3 { margin: 0 0 10px; color: var(--navy); font-size: 1.35rem; }
+    .program-card p { color: var(--muted); margin: 0 0 22px; }
+    .program-card a {
+      margin-top: auto;
+      color: var(--blue);
+      font-weight: 850;
+    }
+
+    .program-actions { margin-top: 34px; }
+
+    /* =========================
+       ABOUT / BRAND STORY
+       ========================= */
+    .about-grid {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 58px;
+      align-items: center;
+    }
+
+    .brand-panel {
+      padding: 34px;
+      border-radius: 30px;
+      background: var(--navy);
+      color: white;
+      position: relative;
+      overflow: hidden;
+      min-height: 360px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    .brand-panel::before,
+    .brand-panel::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+    }
+    .brand-panel::before {
+      width: 230px; height: 230px;
+      border: 45px solid rgba(255,42,42,.22);
+      top: -70px; right: -40px;
+    }
+    .brand-panel::after {
+      width: 150px; height: 150px;
+      background: rgba(255,196,0,.12);
+      left: -40px; bottom: -50px;
+    }
+
+    .brand-panel > * { position: relative; z-index: 1; }
+    .brand-panel .big-sinau {
+      font-weight: 950;
+      font-size: clamp(3.4rem, 7vw, 6.8rem);
+      letter-spacing: -.06em;
+      line-height: .9;
+      margin-bottom: 18px;
+    }
+    .brand-panel .big-sinau span { color: var(--red); }
+    .brand-panel p { margin: 0; max-width: 430px; opacity: .9; }
+
+    .about-copy h2 { margin: 0 0 16px; color: var(--navy); font-size: 2.35rem; line-height: 1.15; }
+    .about-copy p { color: var(--muted); }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .value-item {
+      padding: 14px 16px;
+      border-radius: 14px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      font-weight: 800;
+      color: var(--navy);
+    }
+
+    /* =========================
+       CTA
+       ========================= */
+    .cta-section { padding-top: 26px; }
+    .cta-box {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 30px;
+      padding: 42px;
+      border-radius: 30px;
+      background: linear-gradient(120deg, var(--navy), #123f91);
+      color: white;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .cta-box::after {
+      content: "";
+      position: absolute;
+      width: 240px;
+      height: 240px;
+      right: -85px;
+      top: -95px;
+      border-radius: 50%;
+      border: 48px solid rgba(255,196,0,.18);
+    }
+
+    .cta-box h2 { margin: 0 0 8px; font-size: 2rem; line-height: 1.15; }
+    .cta-box p { margin: 0; max-width: 660px; opacity: .86; }
+    .cta-box .btn { position: relative; z-index: 1; background: var(--yellow); color: #102044; }
+
+    /* =========================
+       FOOTER
+       ========================= */
+    footer {
+      margin-top: 82px;
+      background: #061f50;
+      color: rgba(255,255,255,.84);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr .8fr .8fr;
+      gap: 46px;
+      padding: 54px 0 36px;
+    }
+
+    .footer-brand img {
+      width: 230px;
+      filter: drop-shadow(0 5px 12px rgba(0,0,0,.15));
+      margin-bottom: 14px;
+    }
+
+    .footer-brand p { max-width: 470px; margin: 0; }
+    footer h4 { margin: 4px 0 14px; color: white; }
+    footer ul { list-style: none; padding: 0; margin: 0; }
+    footer li { margin: 9px 0; }
+    footer a:hover { color: var(--yellow); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.12);
+      padding: 20px 0 28px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      font-size: .9rem;
+      color: rgba(255,255,255,.65);
+    }
+
+    /* =========================
+       MOBILE
+       ========================= */
+    @media (max-width: 980px) {
+      .menu-toggle { display: inline-grid; place-items: center; }
+      .nav-links, .nav-cta { display: none; }
+      .nav-links.open {
+        display: flex;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        right: 20px;
+        padding: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        box-shadow: var(--shadow);
+      }
+      .hero-grid, .about-grid, .cta-box { grid-template-columns: 1fr; }
+      .hero { padding-top: 52px; }
+      .hero-visual { min-height: auto; }
+      .floating-note { right: 10px; bottom: 15px; }
+      .feature-grid { grid-template-columns: repeat(2, 1fr); }
+      .program-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 640px) {
+      .container { width: min(100% - 28px, 1160px); }
+      .brand img { width: 175px; }
+      .nav-wrap { min-height: 70px; }
+      .nav-links.open { top: 70px; }
+      .hero h1 { font-size: clamp(2.55rem, 13vw, 4.2rem); }
+      .hero-card { padding: 16px; border-radius: 24px; }
+      .floating-note { position: static; width: 100%; margin-top: 14px; }
+      section { padding: 64px 0; }
+      .feature-grid, .program-grid, .values, .footer-grid { grid-template-columns: 1fr; }
+      .footer-brand { grid-column: auto; }
+      .cta-box { padding: 30px 24px; }
+      .footer-bottom { flex-direction: column; }
+      .hero-actions .btn { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- =====================================================
+       HEADER
+       Image: images/logo-horizontal.png
+       ===================================================== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="SINAU Center - Home">
+        <img src="images/logo-horizontal.png" alt="Logo SINAU Center" />
+      </a>
+
+      <nav aria-label="Navigasi utama">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="tutors.html">Tutors</a></li>
+          <li><a href="sources.html">Learning Hub</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a class="nav-cta" href="https://wa.me/628567443932" target="_blank" rel="noopener">Konsultasi Gratis</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- =====================================================
+         HERO
+         Image: images/mascot-study.png
+         ===================================================== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-dot"></span> Bimbingan Belajar Online & Onsite</div>
+          <h1>Belajar lebih terarah.<br />Tumbuh lebih percaya diri.<br /><span class="accent">Berprestasi lebih tinggi.</span></h1>
+          <p class="hero-lead">
+            SINAU Center membantu siswa membangun pemahaman konsep, kemampuan berpikir kritis, dan kepercayaan diri melalui pembelajaran yang terarah, interaktif, dan relevan dengan masa depan.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="program.html">Lihat Program</a>
+            <a class="btn btn-secondary" href="https://wa.me/628567443932" target="_blank" rel="noopener">Konsultasi via WhatsApp</a>
+          </div>
+
+          <div class="hero-chips" aria-label="Program utama">
+            <span class="chip">SD–SMA</span>
+            <span class="chip">SNPMB</span>
+            <span class="chip">Olimpiade</span>
+            <span class="chip">Online & Onsite</span>
+            <span class="chip">Private Class</span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <img src="images/mascot-study.png" alt="Maskot SINAU Center sedang belajar dengan laptop" />
+          </div>
+          <div class="floating-note">
+            <strong>Belajar • Bertumbuh • Berprestasi</strong>
+            <small>Pembelajaran bukan sekadar mengejar nilai, tetapi membangun cara berpikir.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         WHY SINAU
+         ===================================================== -->
+    <section class="why">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Kenapa SINAU?</p>
+          <h2>Pendampingan belajar yang lebih personal dan bermakna.</h2>
+          <p>SINAU Center menggabungkan kualitas pengajaran, kenyamanan belajar, inovasi, dan komitmen untuk membantu setiap siswa berkembang sesuai potensinya.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3>Personal Learning</h3>
+            <p>Pembelajaran diarahkan sesuai jenjang, kebutuhan, kemampuan, dan target akademik siswa.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">👨‍🏫</div>
+            <h3>Expert Tutors</h3>
+            <p>Didampingi tutor dengan latar akademik dan bidang keahlian yang beragam.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <h3>Concept First</h3>
+            <p>Tidak sekadar menghafal rumus—siswa diajak memahami konsep, logika, dan strategi penyelesaian masalah.</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🚀</div>
+            <h3>Future Skills</h3>
+            <p>Mendorong critical thinking, problem solving, literasi, numerasi, sains, dan kemampuan teknologi.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         PROGRAMS
+         ===================================================== -->
+    <section class="programs" id="program">
+      <div class="container">
+        <div class="section-head">
+          <p class="section-kicker">Program Belajar</p>
+          <h2>Pilih jalur belajar sesuai tujuanmu.</h2>
+          <p>Dari fondasi akademik hingga persiapan kompetisi dan perguruan tinggi, program SINAU dirancang untuk mendampingi setiap tahap perjalanan belajar.</p>
+        </div>
+
+        <div class="program-grid">
+          <article class="program-card">
+            <span class="program-label">Sekolah Dasar</span>
+            <h3>Program SD</h3>
+            <p>Penguatan literasi, numerasi, sains, Bahasa Inggris, serta fondasi akademik yang menyenangkan dan interaktif.</p>
+            <a href="program.html#sd">Pelajari Program →</a>
+          </article>
+
+          <article class="program-card">
+            <span class="program-label">Sekolah Menengah</span>
+            <h3>Program SMP</h3>
+            <p>Memperkuat konsep, kemampuan berpikir kritis, komunikasi, kolaborasi, dan problem solving.</p>
+            <a href="program.html#smp">Pelajari Program →</a>
+          </article>
+
+          <article class="program-card">
+            <span class="program-label">Sekolah Menengah</span>
+            <h3>Program SMA</h3>
+            <p>Pendalaman akademik sekaligus persiapan menghadapi target pendidikan tinggi dan masa depan.</p>
+            <a href="program.html#sma">Pelajari Program →</a>
+          </article>
+
+          <article class="program-card">
+            <span class="program-label">Persiapan Kampus</span>
+            <h3>SNPMB</h3>
+            <p>Latihan terarah, penguatan konsep, pembahasan soal, dan pendampingan untuk menghadapi seleksi perguruan tinggi.</p>
+            <a href="program.html#snpmb">Pelajari Program →</a>
+          </article>
+
+          <article class="program-card">
+            <span class="program-label">Kompetisi Akademik</span>
+            <h3>Olimpiade</h3>
+            <p>Pembinaan Matematika, IPA, Astronomi, Geografi, Kebumian, Komputer, dan bidang kompetisi lainnya.</p>
+            <a href="program.html#olimpiade">Pelajari Program →</a>
+          </article>
+
+          <article class="program-card">
+            <span class="program-label">Future Skills</span>
+            <h3>Math, Coding & Data</h3>
+            <p>Pengenalan logika matematika, analisis data, pemodelan, Python, R, Matlab, dan keterampilan komputasi secara bertahap.</p>
+            <a href="program.html#future-skills">Pelajari Program →</a>
+          </article>
+        </div>
+
+        <div class="program-actions">
+          <a class="btn btn-primary" href="program.html">Lihat Semua Program</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         ABOUT / BRAND STORY
+         ===================================================== -->
+    <section>
+      <div class="container about-grid">
+        <div class="brand-panel">
+          <div class="big-sinau">SIN<span>A</span>U</div>
+          <p><strong>Solusi Inovatif untuk Navigasi Akademis Unggul</strong><br />Nama yang menjadi arah kami dalam mendampingi perjalanan belajar setiap siswa.</p>
+        </div>
+
+        <div class="about-copy">
+          <p class="section-kicker">Tentang Kami</p>
+          <h2>Lebih dari sekadar bimbingan belajar.</h2>
+          <p>
+            SINAU Center hadir sebagai ruang belajar yang mendukung siswa untuk berkembang secara akademik sekaligus membangun karakter, kreativitas, rasa ingin tahu, dan kemampuan berpikir kritis.
+          </p>
+          <p>
+            Kami percaya bahwa setiap siswa memiliki potensi yang unik. Karena itu, proses belajar perlu dibuat nyaman, terarah, relevan, dan memberi ruang untuk bertanya serta mengeksplorasi kemampuan terbaiknya.
+          </p>
+
+          <div class="values">
+            <div class="value-item">✓ Kualitas</div>
+            <div class="value-item">✓ Integritas</div>
+            <div class="value-item">✓ Inovasi</div>
+            <div class="value-item">✓ Dukungan</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         CTA
+         ===================================================== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h2>Bingung memilih program yang tepat?</h2>
+            <p>Ceritakan kebutuhan, jenjang, dan target belajarmu. Tim SINAU akan membantu mengarahkan program yang paling sesuai.</p>
+          </div>
+          <a class="btn" href="https://wa.me/628567443932" target="_blank" rel="noopener">Mulai Konsultasi</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo-horizontal.png" alt="SINAU Center" />
+        <p>Bimbingan belajar online dan onsite untuk membantu siswa belajar lebih terarah, bertumbuh lebih percaya diri, dan berprestasi lebih tinggi.</p>
+      </div>
+
+      <div>
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="tutors.html">Tutors</a></li>
+          <li><a href="sources.html">Learning Hub</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Hubungi Kami</h4>
+        <ul>
+          <li><a href="https://wa.me/628567443932" target="_blank" rel="noopener">+62 856-7443-932</a></li>
+          <li><a href="mailto:sinau.sc@gmail.com">sinau.sc@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/sinau.sc" target="_blank" rel="noopener">Instagram @sinau.sc</a></li>
+          <li><a href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" target="_blank" rel="noopener">YouTube SINAU</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> SINAU Center. All rights reserved.</span>
+      <span>Belajar • Bertumbuh • Berprestasi</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.textContent = isOpen ? '✕' : '☰';
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.textContent = '☰';
+      });
+    });
+  </script>
+</body>
 </html>
