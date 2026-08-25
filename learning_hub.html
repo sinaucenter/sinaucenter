@@ -1,157 +1,774 @@
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Massively by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="id">
+<head>
+    <title>Learning Hub | SINAU Center</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Learning Hub SINAU Center: SinauTube, publikasi, materi belajar, informasi beasiswa, dan berita pendidikan." />
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Bimbel: Bimbingan Belajar<br />
-						SINAU Center</h1>
-						<p> Bimbingan belajar (Online dan Onsite) yang mendukung dan inspiratif bagi anda yang ingin belajar dan tumbuh bersama kami. 
-							Sinau Center (SC) merupakan sebuah ruang pembelajaran yang berfokus pada pengembangan ilmu pengetahuan alam, literasi dan numerasi. 
-							Kami berusaha membangun pemikir yang percaya diri dan kreatif, serta bertujuan untuk memberikan pendidikan yang relevan dengan masa depan mereka. 
-							Bimbel ini diperuntukkan bagi siswa/siswi SD, SMP, SMA, dan mahasiswa. 
-							<a href="https://sinaucenter.com/">Bimbel SINAU Center</a>.</p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    <style>
+        :root {
+            --sinau-navy:#082b6f;
+            --sinau-blue:#1259d5;
+            --sinau-red:#f52222;
+            --sinau-yellow:#ffc928;
+            --sinau-sky:#eef5ff;
+            --sinau-soft:#f7f9fc;
+            --sinau-text:#24324a;
+            --sinau-muted:#68758a;
+            --sinau-border:#dce5f2;
+            --sinau-white:#ffffff;
+        }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">SINAU Center</a>
-					</header>
+        body {
+            color:var(--sinau-text);
+            background:linear-gradient(135deg,#061b47 0%,#0c3888 55%,#0f5cc7 100%);
+        }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-              <li><a href="program.html">Program</a></li>
-							<li><a href="tutors.html">Tutors</a></li>
-              <li class="active"><a href="learning_hub.html">Learning Hub</a></li>
-							<li><a href="contact.html">Contact</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.facebook.com/profile.php?id=61552721097629" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/sinau.sc" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-							<!--
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-							-->
-						</ul>
-					</nav>
+        #wrapper > .bg { background-image:none !important; }
 
-				<!-- Main -->
-					<div id="main">
+        #intro {
+            min-height:68vh;
+            padding-top:5rem;
+            background:
+                radial-gradient(circle at 84% 20%,rgba(255,201,40,.18),transparent 25%),
+                radial-gradient(circle at 12% 72%,rgba(245,34,34,.14),transparent 28%);
+        }
 
-						<!-- Post -->
-							<section class="post">
-								<header class="major">
-									<span class="date" id="current-date"></span>
-									<script>
-									document.getElementById("current-date").textContent =
- 								 	new Date().toLocaleDateString("en-US", {year: "numeric", month: "long", day: "numeric"});
-									</script>
-									
-									<h1>This is a<br />
-									Generic Page</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
-								</header>
-								<div class="image main"><img src="images/pic01.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
-							</section>
+        #intro h1 {
+            color:#fff;
+            margin-bottom:.9rem;
+            letter-spacing:.02em;
+        }
 
-					</div>
+        #intro p {
+            max-width:840px;
+            margin-left:auto;
+            margin-right:auto;
+            color:rgba(255,255,255,.88);
+            font-size:1.05rem;
+        }
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p>1234 Somewhere Road #87257<br />
-								Nashville, TN 00000-0000</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">(000) 000-0000</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.facebook.com/profile.php?id=61552721097629" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="https://www.instagram.com/sinau.sc" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
-									<!--
-									<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									-->
-								</ul>
-							</section>
-						</section>
-					</footer>
+        .hub-badges {
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:.7rem;
+            margin:1.6rem 0 2.2rem;
+        }
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>
+        .hub-badges span {
+            display:inline-block;
+            padding:.55rem .95rem;
+            border:1px solid rgba(255,255,255,.28);
+            border-radius:999px;
+            color:#fff;
+            background:rgba(255,255,255,.09);
+            font-weight:700;
+            font-size:.82rem;
+        }
 
-			</div>
+        #header .logo {
+            border:0;
+            padding:.55rem 0;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        #header .logo img {
+            max-width:280px;
+            width:min(70vw,280px);
+            height:auto;
+            display:block;
+        }
 
-	</body>
+        #nav { background:rgba(4,30,81,.96); }
+        #nav ul.links li a,
+        #nav ul.icons li a { color:#fff !important; }
+        #nav ul.links li.active { background:#fff; }
+        #nav ul.links li.active a { color:var(--sinau-navy) !important; }
+        #nav ul.links li a:hover { color:var(--sinau-yellow) !important; }
+
+        #main { background:#fff; }
+
+        .hub-intro {
+            padding:5rem 4rem 2rem;
+            text-align:center;
+        }
+
+        .eyebrow {
+            display:inline-block;
+            color:var(--sinau-blue);
+            font-weight:800;
+            letter-spacing:.14em;
+            text-transform:uppercase;
+            font-size:.78rem;
+            margin-bottom:.7rem;
+        }
+
+        .hub-intro h1 {
+            color:var(--sinau-navy);
+            margin-bottom:1rem;
+        }
+
+        .hub-intro p {
+            max-width:820px;
+            margin:0 auto;
+            color:var(--sinau-muted);
+        }
+
+        .hub-grid {
+            padding:1rem 4rem 4rem;
+            display:grid;
+            grid-template-columns:repeat(2,minmax(0,1fr));
+            gap:1.4rem;
+        }
+
+        .hub-card {
+            border:1px solid var(--sinau-border);
+            border-radius:22px;
+            overflow:hidden;
+            background:#fff;
+            box-shadow:0 14px 40px rgba(8,43,111,.08);
+            transition:.22s ease;
+            display:flex;
+            flex-direction:column;
+        }
+
+        .hub-card:hover {
+            transform:translateY(-5px);
+            box-shadow:0 20px 48px rgba(8,43,111,.15);
+        }
+
+        .hub-top {
+            min-height:185px;
+            padding:1.7rem;
+            color:#fff;
+            display:flex;
+            flex-direction:column;
+            justify-content:flex-end;
+            position:relative;
+        }
+
+        .hub-card.youtube .hub-top {
+            background:linear-gradient(135deg,#7e1111,var(--sinau-red));
+        }
+
+        .hub-card.publications .hub-top {
+            background:linear-gradient(135deg,var(--sinau-navy),var(--sinau-blue));
+        }
+
+        .hub-card.scholarship .hub-top {
+            background:linear-gradient(135deg,#5b3a00,#d18c00);
+        }
+
+        .hub-card.news .hub-top {
+            background:linear-gradient(135deg,#064a4f,#13a4a0);
+        }
+
+        .hub-icon {
+            font-size:2.15rem;
+            margin-bottom:.8rem;
+        }
+
+        .hub-top h2 {
+            color:#fff;
+            margin:0;
+            font-size:1.7rem;
+        }
+
+        .hub-top small {
+            color:rgba(255,255,255,.82);
+            font-weight:700;
+            margin-top:.35rem;
+        }
+
+        .hub-body {
+            padding:1.6rem;
+            display:flex;
+            flex-direction:column;
+            flex:1;
+        }
+
+        .hub-body p {
+            color:var(--sinau-muted);
+            margin-bottom:1.1rem;
+        }
+
+        .tag-list {
+            display:flex;
+            flex-wrap:wrap;
+            gap:.45rem;
+            margin-bottom:1.4rem;
+        }
+
+        .tag-list span {
+            background:var(--sinau-sky);
+            color:var(--sinau-navy);
+            padding:.38rem .65rem;
+            border-radius:999px;
+            font-size:.72rem;
+            font-weight:800;
+        }
+
+        .hub-actions {
+            margin-top:auto;
+            display:flex;
+            flex-wrap:wrap;
+            gap:.65rem;
+        }
+
+        .sinau-btn {
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            border-radius:999px;
+            padding:.72rem 1rem;
+            font-size:.78rem;
+            font-weight:800;
+            text-decoration:none;
+            border:1px solid var(--sinau-navy);
+            transition:.2s ease;
+            line-height:1.2;
+            height:auto;
+            text-transform:none;
+            letter-spacing:0;
+            box-shadow:none;
+        }
+
+        .sinau-btn.primary {
+            background:var(--sinau-navy);
+            color:#fff !important;
+        }
+
+        .sinau-btn.primary:hover {
+            background:var(--sinau-blue);
+            border-color:var(--sinau-blue);
+        }
+
+        .sinau-btn.secondary {
+            background:#fff;
+            color:var(--sinau-navy) !important;
+        }
+
+        .sinau-btn.secondary:hover {
+            background:var(--sinau-sky);
+        }
+
+        .featured-section {
+            margin:0 4rem 4.5rem;
+            background:linear-gradient(135deg,#f7faff,#eef5ff);
+            border:1px solid var(--sinau-border);
+            border-radius:24px;
+            padding:2.4rem;
+        }
+
+        .section-heading {
+            text-align:center;
+            margin-bottom:2rem;
+        }
+
+        .section-heading h2 {
+            color:var(--sinau-navy);
+            margin-bottom:.6rem;
+        }
+
+        .section-heading p {
+            color:var(--sinau-muted);
+            max-width:760px;
+            margin:0 auto;
+        }
+
+        .resource-grid {
+            display:grid;
+            grid-template-columns:repeat(3,minmax(0,1fr));
+            gap:1rem;
+        }
+
+        .resource-card {
+            background:#fff;
+            border:1px solid var(--sinau-border);
+            border-radius:18px;
+            padding:1.35rem;
+        }
+
+        .resource-card h3 {
+            color:var(--sinau-navy);
+            font-size:1.05rem;
+            margin-bottom:.5rem;
+        }
+
+        .resource-card p {
+            color:var(--sinau-muted);
+            font-size:.86rem;
+            margin-bottom:.8rem;
+        }
+
+        .resource-type {
+            display:inline-block;
+            margin-bottom:.7rem;
+            color:var(--sinau-red);
+            font-size:.72rem;
+            font-weight:900;
+            letter-spacing:.08em;
+            text-transform:uppercase;
+        }
+
+        .subscribe {
+            margin:0 4rem 4.5rem;
+            border-radius:24px;
+            padding:2.5rem;
+            background:linear-gradient(120deg,var(--sinau-navy),#0c4bad);
+            color:#fff;
+            position:relative;
+            overflow:hidden;
+        }
+
+        .subscribe::after {
+            content:"";
+            position:absolute;
+            width:220px;
+            height:220px;
+            right:-65px;
+            top:-75px;
+            border-radius:50%;
+            background:rgba(255,201,40,.18);
+        }
+
+        .subscribe h2 { color:#fff; margin-bottom:.7rem; }
+        .subscribe p { color:rgba(255,255,255,.86); max-width:760px; }
+
+        .subscribe-form {
+            display:flex;
+            gap:.7rem;
+            max-width:650px;
+            position:relative;
+            z-index:1;
+        }
+
+        .subscribe-form input {
+            background:#fff;
+            border:0;
+            border-radius:999px;
+            height:auto;
+            padding:.85rem 1.1rem;
+        }
+
+        .subscribe-form .sinau-btn {
+            background:var(--sinau-yellow);
+            border-color:var(--sinau-yellow);
+            color:var(--sinau-navy) !important;
+            white-space:nowrap;
+        }
+
+        .subscribe-form .sinau-btn:hover {
+            background:#fff;
+            border-color:#fff;
+        }
+
+        #footer { background:#f1f5fb; }
+        #footer h3 { color:var(--sinau-navy); }
+        #copyright { background:#061b47; }
+        #copyright ul { color:rgba(255,255,255,.72); }
+
+        @media screen and (max-width:980px) {
+            .hub-grid {
+                grid-template-columns:1fr;
+                padding-left:2rem;
+                padding-right:2rem;
+            }
+
+            .hub-intro {
+                padding-left:2rem;
+                padding-right:2rem;
+            }
+
+            .featured-section,
+            .subscribe {
+                margin-left:2rem;
+                margin-right:2rem;
+            }
+
+            .resource-grid {
+                grid-template-columns:1fr 1fr;
+            }
+        }
+
+        @media screen and (max-width:640px) {
+            #intro {
+                min-height:auto;
+                padding-top:5rem;
+                padding-bottom:4rem;
+            }
+
+            #intro h1 { font-size:2.25rem; }
+
+            .hub-intro {
+                padding:3.5rem 1.25rem 1.5rem;
+            }
+
+            .hub-grid {
+                padding:1rem 1.25rem 3rem;
+            }
+
+            .featured-section,
+            .subscribe {
+                margin:0 1.25rem 3rem;
+                padding:1.6rem;
+            }
+
+            .resource-grid { grid-template-columns:1fr; }
+
+            .subscribe-form {
+                flex-direction:column;
+            }
+        }
+    </style>
+</head>
+
+<body class="is-preload">
+
+<div id="wrapper" class="fade-in">
+
+    <!-- Intro -->
+    <div id="intro">
+        <h1>Learning Hub<br>SINAU Center</h1>
+        <p>
+            Tempat untuk belajar lebih luas melalui video, publikasi, informasi beasiswa,
+            dan berita pendidikan. Learning Hub dirancang sebagai ruang belajar tambahan
+            yang dapat diakses siswa, orang tua, dan pembelajar secara lebih fleksibel.
+        </p>
+
+        <div class="hub-badges">
+            <span>SinauTube</span>
+            <span>Publications</span>
+            <span>Scholarships</span>
+            <span>Education News</span>
+        </div>
+
+        <ul class="actions">
+            <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Explore</a></li>
+        </ul>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">
+            <img src="images/logo-horizontal.png" alt="SINAU Center">
+        </a>
+    </header>
+
+    <!-- Nav -->
+    <nav id="nav">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="tutors.html">Tutors</a></li>
+            <li class="active"><a href="sources.html">Learning Hub</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <ul class="icons">
+            <li><a href="https://www.facebook.com/profile.php?id=61552721097629" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="https://www.instagram.com/sinau.sc" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main -->
+    <div id="main">
+
+        <section class="hub-intro">
+            <span class="eyebrow">Learn Beyond the Classroom</span>
+            <h1>Satu Ruang untuk Belajar, Membaca, dan Menjelajah</h1>
+            <p>
+                Learning Hub menggabungkan konten pembelajaran dan informasi pendidikan
+                SINAU Center dalam satu halaman agar lebih mudah ditemukan dan digunakan.
+            </p>
+        </section>
+
+        <section class="hub-grid">
+
+            <article class="hub-card youtube">
+                <div class="hub-top">
+                    <div class="hub-icon">▶️</div>
+                    <h2>SinauTube</h2>
+                    <small>Video pembelajaran dan latihan soal</small>
+                </div>
+                <div class="hub-body">
+                    <p>
+                        Kumpulan video pembelajaran SINAU Center untuk membantu siswa
+                        memahami konsep, mengerjakan latihan, dan melihat variasi penyelesaian soal.
+                    </p>
+                    <div class="tag-list">
+                        <span>Mathematics</span>
+                        <span>Problem Solving</span>
+                        <span>Functional Equation</span>
+                        <span>Polynomial</span>
+                    </div>
+                    <div class="hub-actions">
+                        <a class="sinau-btn primary" href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" target="_blank" rel="noopener">Buka YouTube</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="hub-card publications">
+                <div class="hub-top">
+                    <div class="hub-icon">📚</div>
+                    <h2>SINAU Publications</h2>
+                    <small>Artikel, materi, dan referensi belajar</small>
+                </div>
+                <div class="hub-body">
+                    <p>
+                        Ruang publikasi internal untuk membagikan materi, tulisan,
+                        referensi, dan konten pendidikan yang relevan dengan bidang belajar SINAU.
+                    </p>
+                    <div class="tag-list">
+                        <span>Computer Science</span>
+                        <span>Mathematics</span>
+                        <span>Science</span>
+                        <span>English</span>
+                    </div>
+                    <div class="hub-actions">
+                        <a class="sinau-btn secondary" href="#featured-resources">Lihat Topik</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="hub-card scholarship">
+                <div class="hub-top">
+                    <div class="hub-icon">🎓</div>
+                    <h2>Scholarship Corner</h2>
+                    <small>Informasi beasiswa pendidikan</small>
+                </div>
+                <div class="hub-body">
+                    <p>
+                        Informasi program beasiswa dalam negeri maupun luar negeri untuk
+                        membantu pembelajar menemukan peluang pendidikan lanjutan.
+                    </p>
+                    <div class="tag-list">
+                        <span>S1 / D4</span>
+                        <span>S2</span>
+                        <span>S3</span>
+                        <span>Dalam Negeri</span>
+                        <span>Luar Negeri</span>
+                    </div>
+                    <div class="hub-actions">
+                        <a class="sinau-btn secondary" href="#scholarship-info">Lihat Informasi</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="hub-card news">
+                <div class="hub-top">
+                    <div class="hub-icon">📰</div>
+                    <h2>Education News</h2>
+                    <small>Informasi dan perkembangan pendidikan</small>
+                </div>
+                <div class="hub-body">
+                    <p>
+                        Ringkasan informasi pendidikan, peluang belajar, dan perkembangan
+                        akademik yang relevan untuk siswa dan orang tua.
+                    </p>
+                    <div class="tag-list">
+                        <span>Pendidikan</span>
+                        <span>Akademik</span>
+                        <span>Beasiswa</span>
+                        <span>Update</span>
+                    </div>
+                    <div class="hub-actions">
+                        <a class="sinau-btn secondary" href="#education-news">Lihat Berita</a>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Featured resources -->
+        <section class="featured-section" id="featured-resources">
+            <div class="section-heading">
+                <span class="eyebrow">Featured Learning Resources</span>
+                <h2>Topik Belajar dari SINAU</h2>
+                <p>
+                    Beberapa contoh topik yang sudah pernah muncul pada materi dan kanal
+                    pembelajaran SINAU Center.
+                </p>
+            </div>
+
+            <div class="resource-grid">
+                <article class="resource-card">
+                    <span class="resource-type">Mathematics</span>
+                    <h3>Polynomial Composition</h3>
+                    <p>Latihan komposisi polinomial dan strategi penyelesaian masalah matematika.</p>
+                </article>
+
+                <article class="resource-card">
+                    <span class="resource-type">Mathematics</span>
+                    <h3>Complex Polynomial Equation</h3>
+                    <p>Latihan persamaan polinomial kompleks satu variabel untuk pengayaan konsep.</p>
+                </article>
+
+                <article class="resource-card">
+                    <span class="resource-type">Mathematics</span>
+                    <h3>Functional Equation</h3>
+                    <p>Materi dan latihan persamaan fungsional untuk kemampuan berpikir analitis.</p>
+                </article>
+
+                <article class="resource-card">
+                    <span class="resource-type">Computer Science</span>
+                    <h3>Programming & Data</h3>
+                    <p>Pengenalan Python, R, Matlab, dan penerapan analisis data dalam pembelajaran.</p>
+                </article>
+
+                <article class="resource-card">
+                    <span class="resource-type">Science</span>
+                    <h3>Science Learning</h3>
+                    <p>Materi sains yang mencakup Fisika, Kimia, Biologi, dan contoh aplikasinya.</p>
+                </article>
+
+                <article class="resource-card">
+                    <span class="resource-type">English</span>
+                    <h3>English Skills</h3>
+                    <p>Penguatan kemampuan reading, listening, writing, dan speaking.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Scholarship -->
+        <section class="featured-section" id="scholarship-info">
+            <div class="section-heading">
+                <span class="eyebrow">Scholarship Corner</span>
+                <h2>Temukan Peluang Pendidikan</h2>
+                <p>
+                    SINAU Center sebelumnya membagikan informasi beasiswa untuk jenjang
+                    S1/D4, S2, dan S3, baik di dalam maupun luar negeri.
+                </p>
+            </div>
+
+            <div class="resource-grid">
+                <article class="resource-card">
+                    <span class="resource-type">Dalam Negeri</span>
+                    <h3>Beasiswa Pendidikan</h3>
+                    <p>Informasi peluang studi jenjang S1/D4, S2, dan S3 dari berbagai institusi.</p>
+                </article>
+
+                <article class="resource-card">
+                    <span class="resource-type">Dalam Negeri</span>
+                    <h3>Degree by Research</h3>
+                    <p>Informasi peluang pendidikan berbasis riset untuk jenjang pascasarjana.</p>
+                </article>
+
+                <article class="resource-card">
+                    <span class="resource-type">Luar Negeri</span>
+                    <h3>International Scholarship</h3>
+                    <p>Informasi peluang studi dan beasiswa luar negeri yang dapat diperbarui secara berkala.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- News -->
+        <section class="featured-section" id="education-news">
+            <div class="section-heading">
+                <span class="eyebrow">Education News</span>
+                <h2>Informasi Pendidikan yang Relevan</h2>
+                <p>
+                    Bagian ini disiapkan untuk artikel, pengumuman, informasi seleksi,
+                    peluang belajar, atau kabar pendidikan terbaru dari SINAU Center.
+                </p>
+            </div>
+
+            <div class="resource-grid">
+                <article class="resource-card">
+                    <span class="resource-type">Coming Soon</span>
+                    <h3>Update Pendidikan</h3>
+                    <p>Konten berita dapat ditambahkan secara berkala tanpa mengubah struktur utama halaman.</p>
+                </article>
+
+                <article class="resource-card">
+                    <span class="resource-type">Coming Soon</span>
+                    <h3>Tips Belajar</h3>
+                    <p>Ruang untuk strategi belajar, persiapan ujian, dan pengembangan kebiasaan belajar.</p>
+                </article>
+
+                <article class="resource-card">
+                    <span class="resource-type">Coming Soon</span>
+                    <h3>Academic Opportunity</h3>
+                    <p>Ruang untuk kompetisi, program pendidikan, seminar, atau peluang akademik lainnya.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Subscribe -->
+        <section class="subscribe">
+            <span class="eyebrow" style="color:#ffc928;">Stay Connected</span>
+            <h2>Jangan lewatkan materi dan informasi terbaru.</h2>
+            <p>
+                Ikuti kanal sosial SINAU Center untuk mendapatkan pembaruan video,
+                materi pembelajaran, dan informasi pendidikan.
+            </p>
+
+            <div class="subscribe-form">
+                <a class="sinau-btn" href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" target="_blank" rel="noopener">Subscribe YouTube</a>
+                <a class="sinau-btn" href="https://www.instagram.com/sinau.sc" target="_blank" rel="noopener">Follow Instagram</a>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <section>
+            <h3>SINAU Center</h3>
+            <p>
+                <strong>Belajar • Bertumbuh • Berprestasi</strong><br>
+                Solusi Inovatif untuk Navigasi Akademis Unggul.
+            </p>
+            <p>
+                Learning Hub merupakan ruang berbagi materi pembelajaran,
+                publikasi, video, dan informasi pendidikan dari SINAU Center.
+            </p>
+        </section>
+
+        <section class="split contact">
+            <section>
+                <h3>Phone / WhatsApp</h3>
+                <p><a href="https://wa.me/628567443932">+62 856-7443-932</a></p>
+            </section>
+
+            <section>
+                <h3>Email</h3>
+                <p><a href="mailto:sinau.sc@gmail.com">sinau.sc@gmail.com</a></p>
+            </section>
+
+            <section>
+                <h3>Social</h3>
+                <ul class="icons alt">
+                    <li><a href="https://www.facebook.com/profile.php?id=61552721097629" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="https://www.instagram.com/sinau.sc" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC05gz00CqrHLeq9WJtQPoWQ" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+                </ul>
+            </section>
+        </section>
+    </footer>
+
+    <div id="copyright">
+        <ul>
+            <li>&copy; 2026 SINAU Center</li>
+            <li>Belajar • Bertumbuh • Berprestasi</li>
+        </ul>
+    </div>
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
 </html>
